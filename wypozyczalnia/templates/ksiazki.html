@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wszystkie książki</title>
+</head>
+<body>
+    <h2>Wszystkie książki:</h2>
+    <ul>
+        {% for ksiazka in ksiazki %}
+        <li> {{ ksiazka.tytul }} - autor {{ksiazka.autor.imie}} {{ksiazka.autor.nazwisko}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
